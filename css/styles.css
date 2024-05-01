@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    src: url(/assets/img/logo/navbar/navbar\ logo.png);
+}
+
+
+
+
+
+
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    font-weight: bold;
+    animation: blink 1s step-end infinite; /* Continúa parpadeando indefinidamente */
+}
