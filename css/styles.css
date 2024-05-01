@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
-.navbar-brand{
-    src: url(/assets/img/logo/navbar/navbar\ logo.png);
+.navbar{
+    background-color: rgb(46, 46, 46);
+}
+
+.nav-link{
+    color: white !important;
 }
 
 
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+
+}
 
 
 
