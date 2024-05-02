@@ -6,11 +6,19 @@
 
 .navbar{
     background-color: rgb(46, 46, 46);
+    ;
     position: relative;
+}
+
+.navbar-brand{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 .nav-link{
     color: white !important;
+    padding: 29px;
 }
 
 .collapse{
@@ -18,6 +26,106 @@
     justify-content: flex-end;
 
 }
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Ajustar según el contenido */
+    padding: 50px 0; /* Espacio arriba y abajo, sin padding lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea contenido a la izquierda */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.small-text {
+    font-family: "guyot-sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px; /* Ajustar tamaño de fuente más pequeño */
+    color: rgb(0, 0, 0); /* Color gris para el texto */
+    position: absolute;
+    top: 26%; /* Posición sobre los otros textos */
+    left: 120px; /* Alineado con los textos más grandes */
+    width: 50%; /* No sobrepasa la mitad del contenedor */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeInDown 1s ease-out forwards; /* Aplica la misma animación */
+    z-index: 0; /* Mantiene el texto en el fondo */
+}
+
+.trabaja {
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-size: 4rem; /* Tamaño de fuente grande */
+    color: rgba(143, 143, 143, 0.425);
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    width: 50%; /* Limita el ancho a la mitad de su contenedor */
+    top: 50%;
+    left: 100px; /* Ajuste para el padding izquierdo */
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+h1 {
+    position: relative;
+    animation: fadeInDown 1s ease-out forwards; /* Aplica la animación */
+    opacity: 0; /* Comienza invisible */
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; /* Ajustar para visibilidad */
+    text-align: left;
+    position: absolute;
+    height: 100%;
+    width: 30%; /* Asegura que no ocupe más de la mitad */
+    top: 33%; /* Posicionamiento vertical */
+    left: 100px; /* Alineado al inicio, con algo de espacio */
+    transform: translateY(-67%);
+    padding-left: 25px; /* Padding adicional para alinear con 'trabaja' */
+    z-index: 1;
+}
+
+
+h1 span {
+    white-space: nowrap; /* Evita que el texto se divida en líneas */
+    color: salmon;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Comienza 20px arriba de su posición final */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Termina en su posición normal */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .small-text {
+        left: 25px; /* Alineación en dispositivos móviles */
+        font-size: 0.8rem; /* Tamaño más pequeño en móviles */
+    }
+
+    .trabaja {
+        font-size: 2rem; /* Ajusta el tamaño para móviles */
+        left: 25px; /* Reduce el padding izquierdo */
+    }
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de fuente para móviles */
+        width: 50%; /* Limita el ancho a 75% del contenedor */
+        left: 25px; /* Alinea con el padding izquierdo modificado de .trabaja */
+        padding-left: 0; /* Elimina el padding adicional */
+        top: 250px;
+    }
+}
+
+
 
 
 
