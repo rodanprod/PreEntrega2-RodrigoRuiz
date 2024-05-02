@@ -38,22 +38,7 @@
     box-sizing: border-box;
 }
 
-.small-text {
-    font-family: "guyot-sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 24px;
-    color: rgb(143, 143, 143); /* Color gris ajustado */
-    position: absolute;
-    top: 10%; /* Más arriba sobre los otros textos */
-    left: 120px;
-    width: 50%;
-    opacity: 0;
-    animation: fadeInDown 1s ease-out forwards;
-    z-index: 1; /* Por encima del texto de fondo, pero debajo de h1 */
-}
-
-.trabaja {
+h2{
     font-family: "lulo-one", sans-serif;
     font-weight: 700;
     font-size: 4rem;
@@ -62,14 +47,14 @@
     pointer-events: none;
     position: absolute;
     width: 50%;
-    top: 50%;
+    top: 60%;
     left: 100px;
     transform: translateY(-50%);
     z-index: 0;
 }
 
-h1 {
-    position: relative;
+.princ{
+    position: absolute;
     animation: fadeInDown 1s ease-out forwards;
     opacity: 0;
     font-family: "lulo-one", sans-serif;
@@ -77,13 +62,13 @@ h1 {
     font-size: 2.5rem;
     text-align: left;
     width: 30%;
-    top: 33%;
+    top: 15%;
     left: 100px;
     transform: translateY(-67%);
     z-index: 1;
 }
 
-h1 span {
+.princ span {
     white-space: nowrap;
     color: salmon;
 }
@@ -107,29 +92,7 @@ h1 span {
     transition: transform 0.3s ease-out;
 }
 
-.button-container {
-    display: flex;
-    justify-content: flex-start; 
-    margin-left: 30%;
-    margin-top: 15%;
-}
-
-.call-action {
-    padding: 12px 24px; 
-    font-size: 18px; 
-    color: #ffffff;
-    background-color: #636363; 
-    border: none; 
-    border-radius: 5px; 
-    text-decoration: none;
-    transition: background-color 0.3s; 
-}
-
-.call-action:hover {
-    background-color: #313131; 
-}
-
-h2{
+h3{
     text-align: center;
     background-color: rgb(40, 114, 89);
     padding: 20px;
