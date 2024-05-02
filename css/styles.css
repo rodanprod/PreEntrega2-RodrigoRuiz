@@ -38,7 +38,22 @@
     box-sizing: border-box;
 }
 
-h2{
+.small-text {
+    font-family: "guyot-sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+    color: rgb(143, 143, 143); /* Color gris ajustado */
+    position: absolute;
+    top: 10%; /* Más arriba sobre los otros textos */
+    left: 120px;
+    width: 50%;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out forwards;
+    z-index: 1; /* Por encima del texto de fondo, pero debajo de h1 */
+}
+
+.trabaja {
     font-family: "lulo-one", sans-serif;
     font-weight: 700;
     font-size: 4rem;
@@ -47,14 +62,14 @@ h2{
     pointer-events: none;
     position: absolute;
     width: 50%;
-    top: 60%;
+    top: 50%;
     left: 100px;
     transform: translateY(-50%);
     z-index: 0;
 }
 
-.princ{
-    position: absolute;
+h1 {
+    position: relative;
     animation: fadeInDown 1s ease-out forwards;
     opacity: 0;
     font-family: "lulo-one", sans-serif;
@@ -62,13 +77,13 @@ h2{
     font-size: 2.5rem;
     text-align: left;
     width: 30%;
-    top: 15%;
+    top: 33%;
     left: 100px;
     transform: translateY(-67%);
     z-index: 1;
 }
 
-.princ span {
+h1 span {
     white-space: nowrap;
     color: salmon;
 }
@@ -92,7 +107,29 @@ h2{
     transition: transform 0.3s ease-out;
 }
 
-h3{
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+.call-action {
+    padding: 12px 24px; 
+    font-size: 18px; 
+    color: #ffffff;
+    background-color: #636363; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+.call-action:hover {
+    background-color: #313131; 
+}
+
+h2{
     text-align: center;
     background-color: rgb(40, 114, 89);
     padding: 20px;
