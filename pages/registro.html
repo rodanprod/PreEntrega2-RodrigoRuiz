@@ -57,6 +57,42 @@
     </header>
 
 
+    <h2 class="title">
+        Register
+    </h2>
+        <div class="container">
+            <div class="signup">
+                <h2 class="signup-title">Sign Up</h2>
+                <form class="form" action="/register" method="post">
+                    <input type="text" name="name" placeholder="Name" required><br>
+                    <input type="text" name="lastname" placeholder="Last Name" required><br>
+                    <label>Gender:</label><br>
+                    <input type="radio" name="gender" value="hombre"> Hombre<br>
+                    <input type="radio" name="gender" value="mujer"> Mujer<br>
+                    <input type="radio" name="gender" value="otro"> Otro<br>
+                    <input type="date" name="birthday" placeholder="Birthday"><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="password" name="password" placeholder="Enter your password" required><br>
+                    <input type="password" name="repassword" placeholder="Reenter your password" required><br>
+                    <button class="button" type="submit">Register</button>
+                </form>
+            </div>
+            <div class="signin">
+                <h2 class="signin-title">Sign In</h2>
+                <button class="logo-button"><a href="https://accounts.google.com">
+                    <img src="../Assets/Images/Another Logos/google.png" alt="Google" class="logo-image">
+                </button></a>
+                <button class="logo-button"><a href="https://www.icloud.com">
+                    <img src="../Assets/Images/Another Logos/Apple.jpg" alt="Apple" class="logo-image">
+                </button></a>
+                <button class="logo-button"><a href="https://auth.meta.com/?source_app_id=800455417652954&redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATA9aS_LukO1iIbKaSf7Ph2zFFZZ_qhTiaRqGZQRWckkKzviRsrpGBfn2pG5uq5RFPgOGRNnf0fn2wKMqrnvmYCVzDEYFDceDWd6EK3bA1Ao6WuZ_xAd6V-FV1UHZse91nkAceQtKZZwlN1pHx8GJFTh6SRWrjxrk4lMllvSLxHCmlP9SZcmgCZf9p_tCFM7tpXYXGwT9xaDccAIWTXfF49b0ocA_nA1_EP-cXFHHgxsrT1wBlgjn7AzU_yauijA42C5NAam%26nonce%3DAVqKL0vYIwc&utm_source=meta.com">
+                    <img src="../Assets/Images/Another Logos/Meta logo.webp" alt="Meta" class="logo-image">
+                </button></a>
+            </div>
+            <div class="divider">
+                <span>or</span>
+            </div>
+        </div>
 
 
 
@@ -70,8 +106,21 @@
 
 
 
-<footer>
-</footer>
+
+    <footer>
+        <p>todos los derechos reservados por copyright</p>
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
 
     <script>
         const titleText = 'Registrate';

@@ -146,6 +146,25 @@ h3{
     font-size: 20px;
 }
 
+.jumbotron{
+    background-image: url(/assets/img/Background/Mar.jpeg);
+    background-size: cover;
+    height: 500px;
+}
+
+h6{
+    text-align: start;
+    font-size: 40px;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.p-5{
+    font-size: 20px;
+    padding-left: 60px;
+}
+
 
 
 @keyframes fadeInDown {
